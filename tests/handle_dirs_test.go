@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"gitlab.ssec.wisc.edu/brucef/ftpserver/server"
+	"github.com/brucef/ftpserver/server"
 	"gopkg.in/dutchcoders/goftp.v1"
 )
 

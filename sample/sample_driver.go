@@ -22,7 +22,7 @@ import (
 	"encoding/pem"
 	"math/big"
 
-	"gitlab.ssec.wisc.edu/brucef/ftpserver/server"
+	"github.com/brucef/ftpserver/server"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/naoina/toml"

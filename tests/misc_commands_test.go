@@ -5,7 +5,7 @@ import (
 
 	"time"
 
-	"gitlab.ssec.wisc.edu/brucef/ftpserver/server"
+	"github.com/brucef/ftpserver/server"
 	"github.com/secsy/goftp"
 )
 
