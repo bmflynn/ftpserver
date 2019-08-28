@@ -1,4 +1,4 @@
-module github.com/brucef/ftpserver
+module github.com/bmflynn/ftpserver
 
 require (
 	github.com/fclairamb/ftpserver v0.0.0-20181215165500-058ccd38e144
