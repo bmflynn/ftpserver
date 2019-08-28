@@ -5,7 +5,7 @@ import (
 
 	"time"
 
-	"github.com/bmflynn/ftpserver/server"
+	"github.com/fclairamb/ftpserver/server"
 	"github.com/secsy/goftp"
 )
 
