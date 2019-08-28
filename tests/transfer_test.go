@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fclairamb/ftpserver/server"
+	"gitlab.ssec.wisc.edu/brucef/ftpserver/server"
 	"github.com/secsy/goftp"
 )
 

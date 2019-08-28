@@ -8,8 +8,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/fclairamb/ftpserver/sample"
-	"github.com/fclairamb/ftpserver/server"
+	"gitlab.ssec.wisc.edu/brucef/ftpserver/sample"
+	"gitlab.ssec.wisc.edu/brucef/ftpserver/server"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 )

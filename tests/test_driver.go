@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/fclairamb/ftpserver/server"
+	"gitlab.ssec.wisc.edu/brucef/ftpserver/server"
 	"github.com/go-kit/kit/log"
 )
 

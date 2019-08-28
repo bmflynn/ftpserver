@@ -22,7 +22,7 @@ import (
 	"encoding/pem"
 	"math/big"
 
-	"github.com/fclairamb/ftpserver/server"
+	"gitlab.ssec.wisc.edu/brucef/ftpserver/server"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/naoina/toml"
@@ -318,6 +318,14 @@ func (driver *ClientDriver) RenameFile(cc server.ClientContext, from, to string)
 	to = driver.BaseDir + to
 
 	return os.Rename(from, to)
+}
+
+func (driver *ClientDriver) ChangeFileMTime(cc server.ClientContext, path string, mtime time.Time) error {
+	return errors.New("Not supported")
+}
+
+func (driver *ClientDriver) ChangeFileCTime(cc server.ClientContext, path string, ctime time.Time) error {
+	return errors.New("Not supported")
 }
 
 // NewSampleDriver creates a sample driver

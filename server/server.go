@@ -58,6 +58,7 @@ func init() {
 	commandsMap["ALLO"] = &CommandDescription{Fn: (*clientHandler).handleALLO}
 	commandsMap["REST"] = &CommandDescription{Fn: (*clientHandler).handleREST}
 	commandsMap["SITE"] = &CommandDescription{Fn: (*clientHandler).handleSITE}
+	commandsMap["MFMT"] = &CommandDescription{Fn: (*clientHandler).handleMFMT}
 
 	// Directory handling
 	commandsMap["CWD"] = &CommandDescription{Fn: (*clientHandler).handleCWD}

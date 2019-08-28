@@ -7,6 +7,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 )
 
 func (c *clientHandler) handleSTOR() {
@@ -222,4 +223,23 @@ func (c *clientHandler) handleMDTM() {
 	} else {
 		c.writeMessage(550, fmt.Sprintf("Couldn't access %s: %s", path, err.Error()))
 	}
+}
+
+func (c *clientHandler) handleMFMT() {
+	spl := strings.SplitN(c.param, " ", 2)
+	tm, err := time.Parse("20060102150405", spl[0])
+	if err != nil {
+		c.writeMessage(501, err.Error())
+		return
+	}
+
+	path := c.absPath(spl[1])
+
+	err = c.driver.ChangeFileMTime(c, path, tm)
+	if err != nil {
+		c.writeMessage(550, err.Error())
+		return
+	}
+
+	c.writeMessage(250, "mtime changed")
 }

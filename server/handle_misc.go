@@ -95,6 +95,7 @@ func (c *clientHandler) handleFEAT() {
 		"SIZE",
 		"MDTM",
 		"REST STREAM",
+		"MFMT",
 	}
 
 	if !c.daddy.settings.DisableMLSD {

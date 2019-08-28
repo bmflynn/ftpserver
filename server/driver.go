@@ -5,6 +5,7 @@ import (
 	"io"
 	"net"
 	"os"
+	"time"
 )
 
 // This file is the driver part of the server. It must be implemented by anyone wanting to use the server.
@@ -56,6 +57,8 @@ type ClientHandlingDriver interface {
 
 	// ChmodFile changes the attributes of the file
 	ChmodFile(cc ClientContext, path string, mode os.FileMode) error
+
+	ChangeFileMTime(cc ClientContext, path string, mtime time.Time) error
 }
 
 // ClientContext is implemented on the server side to provide some access to few data around the client
